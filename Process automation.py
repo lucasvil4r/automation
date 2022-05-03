@@ -3,7 +3,8 @@ import time
 
 # Coleta CFOP
 cfop = pyautogui.confirm(text='Qual CFOP deseja lançar ?', title='Selecione CFOP', buttons=['1353', '2353'])
-pyautogui.alert(text='Certifique que aba "emissão de notas fiscais esteja aberta e apenas os aquivos para lançamento se encontre na aréa de trabalho"',title='ATENÇÃO', button='OK')
+pyautogui.alert(text='IMPORTANTE PARA USO INICIAL DO'
+                     '   PROGRAMA:\n\nCertifique que aba "emissão de notas fiscais esteja aberta e apenas os aquivos para lançamento se encontre na aréa de trabalho"',title='ATENÇÃO', button='OK')
 
 loop = 'Continuar lançando'
 while (loop == 'Continuar lançando'):
@@ -93,12 +94,12 @@ while (loop == 'Continuar lançando'):
 
 # Seleciona acão\n",
 
-    pyautogui.click(x=2281, y=371)
+    #pyautogui.click(x=2281, y=371)
 
 # Seleciona tipo nota fiscal\n",
 
-    pyautogui.click(x=2242, y=363)
-    pyautogui.click(x=2194, y=471)
+    #pyautogui.click(x=2242, y=363)
+    #pyautogui.click(x=2194, y=471)
     pyautogui.click(x=2024, y=468)
 
 # Seleciona CFOP\n",
@@ -122,7 +123,7 @@ while (loop == 'Continuar lançando'):
     pyautogui.hotkey('shift', 'f6')
     pyautogui.press('pageup')
     pyautogui.press('delete')
-    pyautogui.press('tab', presses=5, interval=0.400)
+    pyautogui.press('tab', presses=5, interval=0.500)
     pyautogui.press('enter')
     pyautogui.press('tab')
     pyautogui.press('f4')
@@ -130,10 +131,10 @@ while (loop == 'Continuar lançando'):
     pyautogui.hotkey('shift', 'f6')
     pyautogui.press('pageup')
     pyautogui.press('delete')
-    pyautogui.press('tab', presses=5, interval=0.400)
+    pyautogui.press('tab', presses=5, interval=0.500)
     pyautogui.press('enter')
     pyautogui.hotkey('ctrl', 'f4')
     pyautogui.press('enter')
     loop = pyautogui.confirm(text='Deseja lançar outro CT-e', title='CONTINAR LANÇAMENTO', buttons=['Continuar lançando', 'Finalizar'])
 else:
-    pyautogui.alert(text='Até os proximos...', title='FINALIZADO', button='OK')
+    pyautogui.alert(text='Até logo...', title='FINALIZADO', button='OK')
