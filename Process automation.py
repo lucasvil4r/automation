@@ -3,9 +3,7 @@ import time
 
 # Coleta CFOP
 cfop = pyautogui.confirm(text='Qual CFOP deseja lançar ?', title='Selecione CFOP', buttons=['1353', '2353'])
-pyautogui.alert(text='IMPORTANTE PARA USO INICIAL DO'
-                     ' PROGRAMA:\n\nCertifique que aba "emissão de notas fiscais esteja aberta e apenas os aquivos para lançamento se encontre na aréa de trabalho".',title='ATENÇÃO', button='OK')
-
+pyautogui.alert(text='IMPORTANTE PARA O BOM USO DO PROGRAMA:\n\n-Certifique que a aba de cadastro de notas fiscais esteja aberta e apenas os arquivos para lançamento se encontre na área de trabalho.\n\n-Assim que o programa entrar em execução não interferir nos movimentos de mouse e não pressionar nenhuma tecla, exceção para o caso de interação com a caixa de mensagem .\n\n-Os arquivos da área de trabalho devem estar de forma sequencial para seleção dos documentos ocorrer de forma correta.\n\n-Em casos de erro na execução esperar caixa de mensagem surgir na tela e fechar arquivo executável e começar novamente.', title='ATENÇÃO', button='OK')
 loop = 'Continuar lançando'
 while (loop == 'Continuar lançando'):
 
